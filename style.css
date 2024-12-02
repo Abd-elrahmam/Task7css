@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.div1 , .div2 , .div3 , .div4{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    /* margin: 0 auto; */
+}
+.div1{
+    background-image: url(img/desert-2435404_1280.jpg);
+}
+.div2{
+    background-image: url(img/drop-3698073_1280.jpg);
+}
+.div3{
+    background-image: url(img/sea-6543041_1280.jpg);
+}
+.div4{
+    background-image: url(img/desert-2435404_1280.jpg);
+}
+
+span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    font-weight: bold;
+    font-size: 40px;
+    transition: .3s;
+    margin: 0 auto;
+}
+.div1 .One{
+animation: upToDown 1s linear infinite alternate;
+}
+.div2 .two{
+animation: opacity 3s infinite linear;
+}
+/* .div3 .three{
+animation: rotate 3s infinite linear;
+} */
+/* .div4 .four{
+animation: scales 1s infinite linear;
+} */
+/* Start anmitions */
+@keyframes upToDown {
+    0% {
+        top: 60px; 
+        /* transform: translateY(60px); */
+    }
+    100% {
+        top: 60%;
+        /* transform: translateY(60%); */
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes scales {
+    0% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1.7);
+    }
+}
+
